@@ -46,19 +46,15 @@ body {background:url(../img/bg-header.jpg) no-repeat 50% 40px, url(../img/bg-bod
 
 /* header */
 
-	.header {@extend .clear; font-family:"open Sans"; background:$primary;}	
-	.hd1 {@extend .container, .space-l-r;}
+	header {@extend .clear; font-family:"open Sans"; background:$primary;}	
+	.header {@extend .container, .space-l-r;}
 	.logo {color:$txt-bg; display:block; float:left; padding-top:6px; margin-right:64px; width:auto; }
 	.logo span {position:relative; top: -0.17em; font-weight:100; font-size:3.2em; padding-left:0.1em;}
 	.logo:hover {background:none;}	
-	.logo img {padding-top:12px;}	
-	
-	.dropdown ul {@extend .sub-nav;}
-	.dropdown:hover .sub-nav {visibility: visible; height:auto; opacity:1;}
-	
-	.menu-main-menu {@extend .nav;}
-	.menu-mini-nav {@extend .mini-nav;}
+	.logo img {padding-top:12px;}			
 
+	.nav {float:left;}
+	
 /* end header */
 		
 
@@ -72,6 +68,7 @@ body {background:url(../img/bg-header.jpg) no-repeat 50% 40px, url(../img/bg-bod
 	
 	footer {background:$primary; color:$txt-on-primary; min-height:200px; margin-top:4em;}
 	footer a {color:$txt-on-primary;}
+	.footer {@extend .container;}
 	.ft1 {@extend .container;}
 
 /* end footer */
