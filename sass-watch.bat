@@ -1,1 +1,1 @@
-sass --watch path-to-projec-scsst:path-to-project-scss --watch c:/projects/cssLibrary:c:/projects/cssLibrary
+sass --watch path-to-project-scss:path-to-project-scss --watch c:/projects/cssLibrary:c:/projects/cssLibrary
