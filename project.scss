@@ -52,116 +52,19 @@ body {background:url(../img/bg-header.jpg) no-repeat 50% 40px, url(../img/bg-bod
 	.logo span {position:relative; top: -0.17em; font-weight:100; font-size:3.2em; padding-left:0.1em;}
 	.logo:hover {background:none;}	
 	.logo img {padding-top:12px;}	
+	
+	.dropdown ul {@extend .sub-nav;}
+	.dropdown:hover .sub-nav {visibility: visible; height:auto; opacity:1;}
+	
+	.menu-main-menu {@extend .nav;}
+	.menu-mini-nav {@extend .mini-nav;}
 
 /* end header */
 		
-/* presentation block on top */
-
-	.present {@extend .container, .space-l-r, .space-b-xl;}
-	.pr1 {color:$primary; margin:0; padding-top:0.5em;}
-	.pr11, .pr12 {color:$secondary; margin:0; padding-top:0.5em; font-size:2em;}	
-	.f13 {@extend .bx25;}
-	.f11, .f12 {color:$primary; text-align:right; margin:0; line-height:2;}
-	.f11 {padding-top:0.2em;}
-	.f12 {font-size:1.5em; padding-top:0; margin-top:0; color:$secondary;}	
-	.f131 {@extend .button-primary, .button-l, .icon-mail, .icon-space-l; margin-right:12px;}
-	.f132 {@extend .button-secondary, .button-l, .icon-new-window, .icon-space-l;}
-	.site-description span {display:block;}
-	
-	.f15 {text-align:right;}
-
-	.brand {position:absolute; top:153px; margin-left:-330px; left:50%; display:block;}
-
-/* end presentation block */
 
 /* content */
 	
-	.content {@extend .container; min-height:500px;}
-	
-	/* start */
-		
-		.start h2 {padding-top:2.5em;}
-	
-		.st11, .st12 {@extend .bx50;}
-		.st12 {margin-top:8px;}
-		.st110 {@extend .img-round, .img-left; margin-top:-5px;}
-		.st111 {padding-top:0; margin-top:0;}
-		
-		.st25 {@extend .italic;}
-		
-		.st21, .st31, .st41, .st51, .st71, .st81 {@extend .clear-l; text-align:center;}
-		
-		.st21, .st31, .st41, .st51, .st71, .st81 {@extend .border-heading;}
-		
-		.st22, .st23, .st24, .st42, .st43, .st44 {@extend .bx33;}
-		
-		.st32, .st33, .st34, .st35 {@extend .bx25;}
-			
-		
-		.st221 {@extend .icon-home, .center; @include circle-icon(128px, $primary, $bg-body); }
-		.st231 {@extend .icon-bubbles, .center; @include circle-icon(128px, $secondary, $bg-body);}
-		.st241 {@extend .icon-users, .center; @include circle-icon(128px, $orange1, $bg-body);}
-		
-		.st320 {@extend .icon-equalizer, .center; @include circle-icon(96px, $primary, $bg-body);}
-		.st330 {@extend .icon-list, .center;  @include circle-icon(96px, $secondary, $bg-body);}
-		.st340 {@extend .icon-layers, .center;  @include circle-icon(96px, $orange1, $bg-body);}
-		.st350 {@extend .icon-iphone, .center;  @include circle-icon(96px, $purple1	, $bg-body);}
-		
-		.st222, .st232, .st242, .st321, .st331, .st341, .st351, .st421, .st431, .st441, .st521, .st531, .st422, .st432, .st442, .st541, .st551, .st561, .st571, .st581, .st591, .st501 {text-align:center;}
-		
-		.st52 {@extend .bx33;}
-		
-		.st521 {@extend .icon-key-stroke, .icon-space-l;}	
-		.st531 {@extend .icon-lightbulb, .icon-space-l;}
-		.st541 {@extend .icon-cog, .icon-space-l;}
-		.st551 {@extend .icon-bubbles, .icon-space-l;}
-		.st561 {@extend .icon-compass, .icon-space-l;}
-		.st571 {@extend .icon-bars, .icon-space-l;}
-		.st581 {@extend .icon-wrench, .icon-space-l;}
-		.st591 {@extend .icon-users, .icon-space-l;}
-		.st501 {@extend .icon-pen, .icon-space-l;}	
-			
-		.st72 {text-align:center;}
-		.st721 {@extend .button-primary, .button-xl, .icon-list, .icon-space-l; width:80%}
-		.st731 {@extend .button-secondary, .button-xl, .icon-new-window, .icon-space-l; width:80%}
-		.st741 {@extend .button-tertiary, .button-xl, .icon-mail, .icon-space-l; width:80%}	
-		
-
-		/* wizard */
-		.st82, .st83, .st84 {@extend .bx33; color:#fff; height:190px; margin-bottom:2em; padding-top:0;}	
-				
-		.st82 {background:$secondary; @extend .triangle; width:28%}		
-		.st82:after {@include triangle-r(95px, $secondary);}
-		
-		.st83 {background:darken($secondary,8); @extend .triangle; width:34%;}
-		.st83 > * {position:relative; left:95px;z-index:10; position:relative;}
-		.st83:after {@include triangle-r(95px, darken($secondary,8));}
-		
-		.st84 {background:darken($secondary,15); width:38%; padding-left:110px;}	
-		
-		.st821, .st831, .st841 {@include number-circle($bg-body, $txt-color, 1.6em);}
-		.st82:hover .st821, .st83:hover .st831, .st84:hover .st841 {background:$orange1; color:$bg-body;}
-		
-	/* end start */
-	
-	/* features */
-		
-		.features-mypage {padding-right:0;}
-		.ft52 {@extend .bx33; text-align:center;}
-	
-		.ft22 {@extend .icon-list, .icon-space-l;}
-		.ft23 {@extend .icon-iphone, .icon-space-l;}
-		.ft24 {@extend .icon-map-pin-fill, .icon-space-l;}
-		.ft25 {@extend .icon-cog, .icon-space-l;}
-		.ft26 {@extend .icon-equalizer, .icon-space-l;}
-		.ft27 {@extend .icon-wrench, .icon-space-l;}		
-		.ft28 {@extend .icon-pen, .icon-space-l;}		
-		
-		.ft41 {background:$bg-grey-transparent; padding:2em; margin-top:2em; text-align:center; clear:both;}
-		
-		.ft11 {@extend .border-heading;}
-	
-	/* end features */
+	.content {@extend .container; min-height:500px;}				
 
 /* end content */
 
@@ -172,107 +75,3 @@ body {background:url(../img/bg-header.jpg) no-repeat 50% 40px, url(../img/bg-bod
 	.ft1 {@extend .container;}
 
 /* end footer */
-
-/* design discoverize.com - orchard rules - andrej telle - teamaton.com  */
-
-/* header */
-	
-	.dropdown ul {@extend .sub-nav;}
-	.dropdown:hover .sub-nav {visibility: visible; height:auto; opacity:1;}
-	
-	.menu-main-menu {@extend .nav;}
-	.menu-mini-nav {@extend .mini-nav;}
-
-/* end header */
-
-
-/* content */
-	
-	.content {margin-bottom:3em;}
-	
-	/* messages */
-	
-		.message {@extend .wrapper; text-align:center;}
-	
-	/* end messages */
-	
-	.aside-2 .content {@extend .bx75;}
-	.aside-second {@extend .bx25;}
-
-	.tripel-first, .tripel-second, .tripel-third {@extend .bx33;}
-	
-	.blog-posts, .archive-trail + ul {list-style:none;}
-	.blog-posts li, .archive-trail + ul li {@extend .indent-line;}
-	.blog-posts li:first-child, .archive-trail + ul li:first-child {border-top:none;}
-	.blog-posts li:last-child, .archive-trail + ul li:last-child {border-bottom:none;}
-	
-	.published {@extend .icon-clock, .icon-small; margin-right:16px; font-size:0.8em; font-style:italic;}
-	.m-author {@extend .icon-user, .icon-small;margin-right:16px;font-size:0.8em;font-style:italic;}
-	.tags {@extend .icon-tag-stroke, .icon-small;margin-right:16px;font-size:0.8em;font-style:italic;}
-	.comment-count {@extend .icon-bubbles, .icon-small;font-size:0.8em;font-style:italic;}
-	h2.comment-count {@extend .icon-bubbles, .icon-50; font-style:normal; font-size:2.5em; margin-top:3em;}
-	
-	img {max-width:100%; height:auto;}
-	.blog-post img, .my-page img {border:solid 1px #ccc;}
-	.blog, .blog-post, .my-page {padding-right:32px;}
-	.brand img {border:none;}	
-	
-	.user-voice-widget {@extend .wrapper}
-	
-	/* aside second */
-	
-		.aside-second {background:$bg-grey-transparent; margin-top:3em;}
-		
-		.aside-second ul {list-style:none;}
-		
-		.aside-second h1 {font-size:1.8em;}
-	
-	/* end aside second */
-	
-	/* contact form */
-	
-		#contact-us {@extend .pure-form-aligned;}
-		.contact-button {@extend .button-primary, .button-xl, .icon-mail, .icon-space-l;}
-		
-	/* end contact form*/
-	
-	.create-iframe-content {padding-right:0;}	
-	
-	.comments {list-style:none;}
-	.comment .text {@extend .wrapper, .blockquote; font-size:1em;}
-	
-	/* comment form */
-	
-		.comment-form {@extend .pure-form-aligned;}
-		.comment-form ol {list-style:none; padding:0;}
-		.comment-form li {@extend .pure-control-group;}
-		.comment-form input {@extend .pure-input-1-3;}
-		.comment-form .what textarea {@extend .pure-input-2-3;}
-		
-		.comment-form legend {font-family:open sans; font-weight:400; font-size:2em;}
-		
-		.button-comment-form {margin-left:12em;}
-	
-	/* end comment form */
-	
-/* end content */
-
-/* footer */
-
-	footer h1 {font-size:1.8em;}
-	
-	footer ul {list-style:none;}
-	
-	.footer-header {text-align:center; @extend .container;}
-	.footer-header .logo {float:none;margin:1em 0 0 0; font-family:"open sans";}
-
-	#footer-quad {@extend .container;}
-	
-	#footer-quad-first, #footer-quad-second, #footer-quad-third, #footer-quad-fourth {@extend .bx25;}
-	
-	.widget-footer-info {float:right;}
-	.user-display {float:right; margin:1em 3em 0 0;}
-
-/* end footer */
-
-
