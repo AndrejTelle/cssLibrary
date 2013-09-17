@@ -1,7 +1,7 @@
 /* image display */
 
-.img-frame {@extend .small-shadow, .rounded-small; display:block; border:1px solid #DDDDDD; background:#fff; -moz-border-radius:4px; padding:4px;  margin-bottom:5px;}
+.img-frame {@extend .shadow-small, .rounded-small; display:block; border:1px solid #DDDDDD; background:#fff; -moz-border-radius:4px; padding:4px;  margin-bottom:5px;}
 
-.img-round {@extend .circle; border:solid 1px $txt-cl;}
+.img-round {@extend .circle; border:solid 1px $txt-color;}
 
 .img-left {display:block; float:left; margin-right:12px;}
